@@ -1,0 +1,47 @@
+name: Download-Zähler aktualisieren
+
+# Schreibt docs/downloads.json aus den GitHub-Release-Assets. Die Seite in docs/
+# liest nur diese Datei und ruft selbst keine API ab. Grund: die unauthentifizierte
+# GitHub-API erlaubt nur 60 Anfragen pro Stunde und IP. Ein stündlicher Abruf
+# hält die Seite stattdessen ohne Limit abrufbar.
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: download-count
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: downloads.json aktualisieren
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auschecken
+        uses: actions/checkout@v4
+
+      - name: Downloadzahlen ermitteln
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/build-downloads.py docs/downloads.json
+
+      - name: Änderungen einchecken
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- docs/downloads.json; then
+            echo "Downloadzahlen unverändert, nichts zu committen."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/downloads.json
+          git commit -m "Downloadzahlen aktualisieren"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"

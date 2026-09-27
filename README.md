@@ -12,6 +12,8 @@
 
 [⬇️ APK herunterladen (v1.0.0)](https://github.com/barezi5527/OnlineSoccer-Download/releases/latest/download/OnlineSoccer-1.0.0-release.apk)
 &nbsp;&nbsp;·&nbsp;&nbsp;
+[📊 Downloadzähler](https://barezi5527.github.io/OnlineSoccer-Download/)
+&nbsp;&nbsp;·&nbsp;&nbsp;
 [📋 Änderungsprotokoll](CHANGELOG.md)
 &nbsp;&nbsp;·&nbsp;&nbsp;
 [🛡️ Sicherheit & Berechtigungen](SECURITY.md)
@@ -71,6 +73,27 @@ Alle Versionen mit vollständigem Änderungsprotokoll findest du unter
   installieren, mit dem eigenen Konto erneut anmelden.
 - Die App ist **nicht** im Google Play Store. Das ist Absicht: der Quellcode-Build ist bewusst
   nicht über Dritte verteilt und lässt sich so jederzeit unabhängig prüfen.
+
+### 📊 Downloadzähler
+
+Wie oft wurde welche APK-Version heruntergeladen? Die Zählung steht auf einer eigenen
+Seite: **<https://barezi5527.github.io/OnlineSoccer-Download/>**
+
+| | |
+|---|---|
+| **Seite** | <https://barezi5527.github.io/OnlineSoccer-Download/> |
+| **Aktualisierung** | stündlich, zusätzlich direkt nach jedem Release |
+| **Datenquelle** | die Downloadzähler der Release-Assets von GitHub |
+
+Die Werte liest ein Workflow (`[.github/workflows/download-count.yml](.github/workflows/download-count.yml)`)
+stündlich über die GitHub-API und schreibt sie nach
+[`docs/downloads.json`](docs/downloads.json). Die Seite ruft selbst keine API ab, weil
+die unauthentifizierte GitHub-API nur 60 Anfragen pro Stunde und IP erlaubt.
+
+**Einschränkung, offen benannt:** GitHub zählt jeden Abruf der Release-Datei. Das
+schließt automatisierte Abrufe, Vorschau-Links und Spiegelungen mit ein. Die Zahl ist
+also die Zahl der Dateiabrufe, nicht die Zahl der verschiedenen Installationen.
+Auf der Seite werden keine Besucherdaten, IP-Adressen oder Cookies erhoben.
 
 ---
 

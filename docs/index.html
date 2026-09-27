@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online Soccer – inoffizielle App: Downloads</title>
+<meta name="description" content="Downloadzähler für die inoffizielle Online-Soccer-Android-App: wie oft wurde welche APK-Version heruntergeladen?">
+<meta name="robots" content="index, follow">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1f24;
+    --muted: #5b6570;
+    --line: #d9dee5;
+    --card: #f6f8fa;
+    --accent: #146c2e;
+    --accent-fg: #ffffff;
+    --code-bg: #eef1f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a;
+      --fg: #e6e9ec;
+      --muted: #9aa4ae;
+      --line: #2c3238;
+      --card: #1c2025;
+      --accent: #3fb950;
+      --accent-fg: #0d1117;
+      --code-bg: #22272d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 1.5rem 1rem 3rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 60rem; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin: 0 0 .25rem; line-height: 1.3; }
+  h2 { font-size: 1.1rem; margin: 2rem 0 .5rem; }
+  p { margin: .5rem 0; }
+  a { color: var(--accent); }
+  .sub { color: var(--muted); margin: 0 0 1.25rem; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: .5rem;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+  }
+  .counter { text-align: center; }
+  .counter .value {
+    font-size: clamp(2.75rem, 12vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+    display: block;
+  }
+  .counter .label { color: var(--muted); }
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .7rem 1.1rem;
+    border-radius: .4rem;
+    background: var(--accent);
+    color: var(--accent-fg);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .btn:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  table { width: 100%; border-collapse: collapse; margin: .5rem 0 0; }
+  th, td { text-align: left; padding: .55rem .5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: .8rem; text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  code { background: var(--code-bg); padding: .1rem .3rem; border-radius: .25rem; font-size: .875em; word-break: break-all; }
+  .note {
+    border-left: 3px solid var(--line);
+    padding: .1rem 0 .1rem .9rem;
+    color: var(--muted);
+    font-size: .9rem;
+  }
+  .status { color: var(--muted); font-size: .9rem; }
+  .status.error { color: #b42318; }
+  @media (prefers-color-scheme: dark) { .status.error { color: #ff7b72; } }
+  footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .875rem; }
+  .skip { position: absolute; left: -9999px; }
+  .skip:focus { left: .5rem; top: .5rem; position: fixed; background: var(--card); padding: .5rem; border: 1px solid var(--line); z-index: 1; }
+</style>
+</head>
+<body>
+<a class="skip" href="#zaehler">Zum Zähler springen</a>
+<main>
+
+  <h1>Online Soccer – inoffizielle App</h1>
+  <p class="sub">Downloadzähler für die Android-APK. Inoffizieller Client für
+    <a href="https://os.ongapo.com">os.ongapo.com</a> ohne Verbindung zu den Betreibern des Spiels.</p>
+
+  <div class="card counter">
+    <h2 id="zaehler" style="margin-top:0">Downloads der aktuellen Version <span id="headline-version"></span></h2>
+    <span class="value" id="headline-count" aria-live="polite">–</span>
+    <span class="label" id="headline-note">Zähler wird geladen …</span>
+    <div id="headline-action"></div>
+  </div>
+
+  <p class="status" id="status" role="status"></p>
+
+  <h2>Alle Versionen</h2>
+  <table id="versions">
+    <thead>
+      <tr>
+        <th scope="col">Version</th>
+        <th scope="col">Veröffentlicht</th>
+        <th scope="col">Größe</th>
+        <th scope="col" class="num">APK-Downloads</th>
+        <th scope="col" class="num">Downloads gesamt</th>
+      </tr>
+    </thead>
+    <tbody id="versions-body">
+      <tr><td colspan="5">Wird geladen …</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Wie wird gezählt?</h2>
+  <p>Die Zahlen stammen aus den Downloadzählern, die GitHub selbst für die
+    Release-Dateien führt. Ein Workflow liest diese Werte stündlich und schreibt
+    sie nach <code>downloads.json</code>; diese Seite zeigt nur diese Datei an.</p>
+  <p class="note">Einschränkungen: GitHub zählt jeden Abruf der Datei. Das schließt
+    automatisierte Abrufe, Vorschau-Links und Spiegelungen mit ein und entspricht
+    daher nicht der Zahl der verschiedenen Personen, die die App installiert haben.
+    Es werden keine Besucherdaten, IP-Adressen oder Cookies auf dieser Seite
+    erhoben – die Seite lädt keine externen Inhalte und setzt keine Analyse-Skripte.</p>
+
+  <h2>Für das Forum einbinden</h2>
+  <p>Verlinken:</p>
+  <p><a id="permalink" href="./">Downloadzähler Online Soccer (inoffiziell)</a></p>
+  <p>Als eingebettetes Fenster (Höhe anpassen):</p>
+  <p><code id="iframe-snippet">&lt;iframe src="…" width="100%" height="620" style="border:0" title="Online Soccer – inoffizielle App: Downloads" loading="lazy"&gt;&lt;/iframe&gt;</code></p>
+
+  <footer>
+    <p>Online Soccer (inoffiziell) – kostenlos, ohne Werbung, ohne In-App-Käufe.
+      Min. Android 8.0, Paketname <code>com.onlinesoccer.app</code>.</p>
+    <p>
+      <a href="https://github.com/barezi5527/OnlineSoccer-Download/releases">Alle Releases</a> ·
+      <a href="https://github.com/barezi5527/OnlineSoccer-Download/blob/main/CHANGELOG.md">Änderungsprotokoll</a> ·
+      <a href="https://github.com/barezi5527/OnlineSoccer-Download/blob/main/SECURITY.md">Sicherheit &amp; Berechtigungen</a> ·
+      <a href="https://github.com/barezi5527/OnlineSoccer-Download/blob/main/PRIVACY.md">Datenschutz</a> ·
+      <a href="https://github.com/barezi5527/OnlineSoccer-Download">Repository</a>
+    </p>
+  </footer>
+
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  var numberFormat = new Intl.NumberFormat("de-DE");
+  var dateFormat = new Intl.DateTimeFormat("de-DE", { dateStyle: "medium" });
+
+  function el(id) { return document.getElementById(id); }
+
+  function text(node, value) { node.textContent = value; }
+
+  function setStatus(message, isError) {
+    var status = el("status");
+    text(status, message);
+    status.className = isError ? "status error" : "status";
+  }
+
+  function formatBytes(bytes) {
+    if (typeof bytes !== "number" || bytes < 0) return "–";
+    return numberFormat.format(Math.round(bytes / 100000) / 10) + " MB";
+  }
+
+  function formatDate(iso) {
+    if (!iso) return "–";
+    var date = new Date(iso);
+    return isNaN(date.getTime()) ? "–" : dateFormat.format(date);
+  }
+
+  function cell(row, value, className) {
+    var td = document.createElement("td");
+    if (className) td.className = className;
+    if (value instanceof Node) td.appendChild(value);
+    else text(td, value);
+    row.appendChild(td);
+    return td;
+  }
+
+  function versionLink(release) {
+    var link = document.createElement("a");
+    link.href = release.pageUrl;
+    text(link, release.version + (release.prerelease ? " (Vorabversion)" : ""));
+    return link;
+  }
+
+  function render(data) {
+    var releases = (data && data.releases) || [];
+    if (!releases.length) throw new Error("Keine Releases gefunden.");
+
+    var latest = releases[0];
+    var apk = latest.apk;
+    var latestCount = apk ? apk.downloads : latest.downloads;
+
+    text(el("headline-version"), latest.version);
+    text(el("headline-count"), numberFormat.format(latestCount));
+    text(el("headline-note"), apk
+      ? apk.name + " · " + formatBytes(apk.size)
+      : "Download der APK");
+
+    if (apk) {
+      var action = el("headline-action");
+      action.textContent = "";
+      var button = document.createElement("a");
+      button.className = "btn";
+      button.href = apk.downloadUrl;
+      text(button, "APK herunterladen (" + latestCount + " Downloads)");
+      action.appendChild(button);
+    }
+
+    var body = el("versions-body");
+    body.textContent = "";
+    releases.forEach(function (release) {
+      var row = document.createElement("tr");
+      cell(row, versionLink(release));
+      cell(row, formatDate(release.publishedAt));
+      cell(row, release.apk ? formatBytes(release.apk.size) : "–");
+      cell(row, release.apk ? numberFormat.format(release.apk.downloads) : "–", "num");
+      cell(row, numberFormat.format(release.downloads), "num");
+      body.appendChild(row);
+    });
+
+    setStatus("Zählerstand: " + formatDate(data.updatedAt) + " · " +
+      numberFormat.format(data.totalDownloads) + " Downloads gesamt · Quelle: " +
+      data.source, false);
+
+    document.documentElement.dataset.ready = "true";
+  }
+
+  function fail(error) {
+    el("versions-body").innerHTML =
+      '<tr><td colspan="5">Zähler derzeit nicht verfügbar.</td></tr>';
+    text(el("headline-note"), "Zähler derzeit nicht verfügbar");
+    setStatus("Die Downloadzahlen konnten nicht geladen werden (" + error.message +
+      "). Die aktuellen Zahlen zeigt GitHub direkt auf der Release-Seite.", true);
+  }
+
+  var permalink = el("permalink");
+  var snippet = el("iframe-snippet");
+  permalink.href = window.location.href.split("#")[0];
+  text(snippet, '<iframe src="' + permalink.href + '" width="100%" height="620" ' +
+    'style="border:0" title="Online Soccer – inoffizielle App: Downloads" ' +
+    'loading="lazy"></iframe>');
+
+  fetch("downloads.json", { cache: "no-cache" })
+    .then(function (response) {
+      if (!response.ok) throw new Error("HTTP " + response.status);
+      return response.json();
+    })
+    .then(render)
+    .catch(fail);
+})();
+</script>
+</body>
+</html>
