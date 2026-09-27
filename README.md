@@ -1,6 +1,6 @@
 <div align="center">
 
-# Online Soccer – inoffizielle App
+# Online Soccer (inoffizielle) App
 
 **Die Android-App für das Online-Fußballspiel – [_os.ongapo.com_](https://os.ongapo.com)**
 
@@ -24,12 +24,12 @@
 
 ## Was ist das?
 
-**Online Soccer** ist einManagerspiel im Browser: Du übernimmst einen Verein, gibst die
+**Online Soccer** ist ein Managerspiel im Browser: Du übernimmst einen Verein, gibst die
 Taktik vor, beobachtest die Spieltage (ZAT) und treibst deinen Verein in der Liga nach oben.
 
-Diese App ist der **native Android-Client** für dieses Spiel. Sie bringt das komplette
-Spiel in eine App, die sich wie eine native Anwendung anfühlt – mit eigener Navigation,
-Bottom-Bar, Dark Mode und Zwischenspeichern statt WebView.
+Diese App ist der **native Android-Client** für dieses Spiel. Die App bildet mittlerweile 
+schon ziemlich viele Bereiche von Online Soccer ab – von Dashboard, ZAT und Taktik über Kader, 
+Transfers und Statistiken bis hin zu Spielberichten, Bewerben, Stadion und weiteren Funktionen.
 
 > **Hinweis:** Diese App ist **kein** offizielles Produkt von *ongapo* und steht in keiner
 > Verbindung zu den Betreibern des Spiels. Sie ist ein inoffizieller, von der Community
@@ -63,12 +63,6 @@ Alle Versionen mit vollständigem Änderungsprotokoll findest du unter
 4. Beim ersten Mal fragt Android nach der Erlaubnis für **„Unbekannte Apps installieren"** –
    das ist die normale Freigabe für jede manuell installierte APK. Danach startet die App.
 
-Alternativ ohne Dateimanager:
-
-```bash
-# adb aus den Android-Backtüren, erreichbar mit Platform-Tools
-adb install OnlineSoccer-1.0.0-release.apk
-```
 
 **Hinweise**
 
