@@ -4,13 +4,13 @@
 
 **Die Android-App für das Online-Fußballspiel – [_os.ongapo.com_](https://os.ongapo.com)**
 
-[![Release](https://img.shields.io/badge/Release-v1.0.0-2ea44f)](../../releases/tag/v1.0.0)
+[![Release](https://img.shields.io/badge/Release-v1.0.0-2ea44f)](https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.0.0)
 [![Android](https://img.shields.io/badge/Android-8.0%2B-3DDC84)](https://developer.android.com/about/versions/oreo)
 [![Lizenz](https://img.shields.io/badge/Lizenz-MIT-blue)](LICENSE)
 [![Signiert](https://img.shields.io/badge/Signatur-valid%20%2B%20Release--3DDC84)](#signatur--und-integrit%C3%A4tspr%C3%BCfung)
 [![Sicherheit](https://img.shields.io/badge/Berechtigungen-2-orange)](#berechtigungen-der-app)
 
-[⬇️ APK herunterladen (v1.0.0)](../../releases/latest/download/OnlineSoccer-1.0.0-release.apk)
+[⬇️ APK herunterladen (v1.0.0)](https://github.com/barezi5527/OnlineSoccer-Download/releases/latest/download/OnlineSoccer-1.0.0-release.apk)
 &nbsp;&nbsp;·&nbsp;&nbsp;
 [📋 Änderungsprotokoll](CHANGELOG.md)
 &nbsp;&nbsp;·&nbsp;&nbsp;
@@ -44,7 +44,7 @@ Bottom-Bar, Dark Mode und Zwischenspeichern statt WebView.
 | | |
 |---|---|
 | **Version** | 1.0.0 (versionCode 1) |
-| **Datei** | [`OnlineSoccer-1.0.0-release.apk`](../../releases/latest/download/OnlineSoccer-1.0.0-release.apk) |
+| **Datei** | [`OnlineSoccer-1.0.0-release.apk`](https://github.com/barezi5527/OnlineSoccer-Download/releases/latest/download/OnlineSoccer-1.0.0-release.apk) |
 | **Größe** | 15,9 MB |
 | **SHA-256** | `f243b676c94b282e6a500326e119f428b5b4a33acc1e962f4623036a5cceea68` |
 | **Mindestversion** | Android 8.0 (Oreo, API 26) |
@@ -53,11 +53,11 @@ Bottom-Bar, Dark Mode und Zwischenspeichern statt WebView.
 | **Preis** | kostenlos, keine Werbung, keine In-App-Käufe |
 
 Alle Versionen mit vollständigem Änderungsprotokoll findest du unter
-[**Releases**](../../releases).
+[**Releases**](https://github.com/barezi5527/OnlineSoccer-Download/releases).
 
 ### Installation
 
-1. APK-Datei aus dem [Release](../../releases/latest) herunterladen.
+1. APK-Datei aus dem [Release](https://github.com/barezi5527/OnlineSoccer-Download/releases/latest) herunterladen.
 2. Prüfsumme kontrollieren (siehe [Integritätsprüfung](#signatur--und-integrit%C3%A4tspr%C3%BCfung)).
 3. Die Datei auf dem Gerät öffnen.
 4. Beim ersten Mal fragt Android nach der Erlaubnis für **„Unbekannte Apps installieren"** –
