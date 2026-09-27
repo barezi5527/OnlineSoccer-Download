@@ -1,6 +1,6 @@
 <div align="center">
 
-# Inoffiziell Online Soccer
+# Online Soccer – inoffizielle App
 
 **Die Android-App für das Online-Fußballspiel – [_os.ongapo.com_](https://os.ongapo.com)**
 
@@ -175,7 +175,7 @@ was genau passiert bzw. was du erwartet hast.
 
 <div align="center">
 
-**Online Soccer 1.0.0** – entwickelt für die Community, nicht verifiziert.
+**Online Soccer 1.0.0 (inoffiziell)** – entwickelt für die Community.
 <sub>Der Quellcode-Build ist privat. Dieses Repository enthält ausschließlich
 Release-Artefakte, die veröffentlichte App-Version und deren Dokumentation.</sub>
 

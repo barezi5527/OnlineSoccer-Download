@@ -6,6 +6,10 @@ dass die APK unverändert ist.
 > **Kurzfassung:** Die App fordert **zwei** Berechtigungen an, beide für den Netzwerkzugriff
 > und nicht entfernbar. Keine Kamera, kein Mikrofon, kein Standort, keine Kontakte, kein
 > Speicherzugriff, kein Tracking.
+>
+> **Online Soccer ist eine inoffizielle App.** Sie steht in keiner Verbindung zu den
+> Betreibern des Spiels `os.ongapo.com` und wird nicht von ihnen unterstützt oder
+> verifiziert.
 
 ---
 
@@ -136,7 +140,7 @@ Offen und bewusst kommuniziert – damit du die Bewertung selbst treffen kannst:
 | **HTTP-Cache im Klartext** | Zwischengespeicherte Seiteninhalte liegen unverschlüsselt im App-Cache. Auf einem gerooteten Gerät wären sie lesbar. Durch `allowBackup="false"` ist die Ausweitung auf Backups begrenzt. |
 | **Abmelden invalidiert die Serversitzung nicht vollständig** | Der dauerhafte Login-Token bleibt serverseitig gültig, bis er abläuft. Auf gemeinsam genutzten Geräten solltest du die App beim Wechsel abmelden. |
 | **Server-URLs werden nicht per Host-Allowlist geprüft** | Pfade aus Spielinhalten werden übernommen, bevor der Cookie-Speicher die Domaingrenze greift. Praktisch relevant nur bei kompromittiertem Server. |
-| **Kein offizielles Play-Store-Ranking** | Die App wird nicht automatisch aktualisiert. Neue Versionen musst du manuell herunterladen. |
+| **Nicht im Play Store veröffentlicht** | Die App wird nicht automatisch aktualisiert. Neue Versionen musst du manuell herunterladen. |
 
 ---
 
