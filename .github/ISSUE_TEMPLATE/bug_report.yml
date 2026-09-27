@@ -10,7 +10,7 @@ body:
         ohne Versions- und Geräteangaben lässt sich ein Fehler oft nicht nachstellen.
 
         **Sicherheitslücken bitte nicht hier melden**, sondern gemäß
-        [SECURITY.md](../SECURITY.md#meldung-einer-sicherheitslücke).
+        [SECURITY.md](https://github.com/barezi5527/OnlineSoccer-Download/blob/main/SECURITY.md#meldung-einer-sicherheitslücke).
 
   - type: input
     id: version
