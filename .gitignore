@@ -25,3 +25,7 @@ desktop.ini
 .vscode/
 *.swp
 *~
+
+# Python-Bytecode des Zähler-Skripts
+__pycache__/
+*.pyc

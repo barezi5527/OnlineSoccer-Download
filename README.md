@@ -82,13 +82,14 @@ Seite: **<https://barezi5527.github.io/OnlineSoccer-Download/>**
 | | |
 |---|---|
 | **Seite** | <https://barezi5527.github.io/OnlineSoccer-Download/> |
-| **Aktualisierung** | stündlich, zusätzlich direkt nach jedem Release |
+| **Aktualisierung** | stündlich geprüft, geschrieben wird nur bei einer Zahlenänderung; zusätzlich direkt nach jedem Release |
 | **Datenquelle** | die Downloadzähler der Release-Assets von GitHub |
 
-Die Werte liest ein Workflow (`[.github/workflows/download-count.yml](.github/workflows/download-count.yml)`)
+Die Werte liest ein Workflow ([.github/workflows/download-count.yml](.github/workflows/download-count.yml))
 stündlich über die GitHub-API und schreibt sie nach
 [`docs/downloads.json`](docs/downloads.json). Die Seite ruft selbst keine API ab, weil
 die unauthentifizierte GitHub-API nur 60 Anfragen pro Stunde und IP erlaubt.
+Stehen die Zahlen unverändert, erzeugt der Workflow keinen Commit.
 
 **Einschränkung, offen benannt:** GitHub zählt jeden Abruf der Release-Datei. Das
 schließt automatisierte Abrufe, Vorschau-Links und Spiegelungen mit ein. Die Zahl ist

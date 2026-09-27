@@ -116,6 +116,18 @@ def build_release(release: dict) -> dict:
     return result
 
 
+def without_timestamp(document: dict) -> dict:
+    """Vergleichsform ohne Zeitstempel, um reine Zeitunterschiede zu ignorieren."""
+    return {key: value for key, value in document.items() if key != "changedAt"}
+
+
+def print_summary(document: dict) -> None:
+    for item in document["releases"]:
+        apk = item["apk"]
+        count = apk["downloads"] if apk else item["downloads"]
+        print(f"  {item['version']}: {count} Downloads ({item['tag']})")
+
+
 def main() -> int:
     target = Path(sys.argv[1] if len(sys.argv) > 1 else "docs/downloads.json")
     releases = api_get(f"/repos/{REPO}/releases?per_page=100")
@@ -125,21 +137,31 @@ def main() -> int:
     document = {
         "schema": SCHEMA_VERSION,
         "repository": REPO,
-        "updatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "changedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "source": "GitHub REST API – Downloadzähler der Release-Assets",
         "totalDownloads": sum(item["downloads"] for item in published),
         "releases": published,
     }
+
+    # Nur bei einer echten Zahlenänderung schreiben. Sonst würde der Workflow
+    # stündlich einen Commit erzeugen, obwohl sich nichts geändert hat, und
+    # damit jedes Mal einen Pages-Build auslösen.
+    if target.exists():
+        try:
+            previous = json.loads(target.read_text(encoding="utf-8"))
+        except ValueError:
+            previous = None
+        if previous is not None and without_timestamp(previous) == without_timestamp(document):
+            print("Downloadzahlen unverändert, Datei bleibt unangetastet.")
+            print_summary(document)
+            return 0
 
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(
         json.dumps(document, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
     print(f"{target}: {len(published)} Release(s), {document['totalDownloads']} Downloads gesamt")
-    for item in published:
-        apk = item["apk"]
-        count = apk["downloads"] if apk else item["downloads"]
-        print(f"  {item['version']}: {count} Downloads ({item['tag']})")
+    print_summary(document)
     return 0
 
 

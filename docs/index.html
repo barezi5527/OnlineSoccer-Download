@@ -124,13 +124,16 @@
 
   <h2>Wie wird gezählt?</h2>
   <p>Die Zahlen stammen aus den Downloadzählern, die GitHub selbst für die
-    Release-Dateien führt. Ein Workflow liest diese Werte stündlich und schreibt
-    sie nach <code>downloads.json</code>; diese Seite zeigt nur diese Datei an.</p>
+    Release-Dateien führt. Ein Workflow prüft diese Werte stündlich und schreibt
+    sie nur dann nach <code>downloads.json</code>, wenn sie sich geändert haben.
+    Diese Seite zeigt ausschließlich diese Datei an.</p>
   <p class="note">Einschränkungen: GitHub zählt jeden Abruf der Datei. Das schließt
     automatisierte Abrufe, Vorschau-Links und Spiegelungen mit ein und entspricht
     daher nicht der Zahl der verschiedenen Personen, die die App installiert haben.
-    Es werden keine Besucherdaten, IP-Adressen oder Cookies auf dieser Seite
-    erhoben – die Seite lädt keine externen Inhalte und setzt keine Analyse-Skripte.</p>
+    Der angegebene Zeitpunkt ist der letzte Zeitpunkt, an dem sich eine Zahl
+    geändert hat – nicht der Zeitpunkt der letzten Prüfung. Es werden keine
+    Besucherdaten, IP-Adressen oder Cookies auf dieser Seite erhoben: die Seite
+    lädt keine externen Inhalte und setzt keine Analyse-Skripte.</p>
 
   <h2>Für das Forum einbinden</h2>
   <p>Verlinken:</p>
@@ -232,7 +235,7 @@
       body.appendChild(row);
     });
 
-    setStatus("Zählerstand: " + formatDate(data.updatedAt) + " · " +
+    setStatus("Zahlen zuletzt geändert: " + formatDate(data.changedAt) + " · " +
       numberFormat.format(data.totalDownloads) + " Downloads gesamt · Quelle: " +
       data.source, false);
 
