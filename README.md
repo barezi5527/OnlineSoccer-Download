@@ -1,6 +1,6 @@
 <div align="center">
 
-# Online Soccer
+# Inoffiziell Online Soccer
 
 **Die Android-App für das Online-Fußballspiel – [_os.ongapo.com_](https://os.ongapo.com)**
 
