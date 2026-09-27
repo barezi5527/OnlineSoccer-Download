@@ -37,7 +37,7 @@ Transfers und Statistiken bis hin zu Spielberichten, Bewerben, Stadion und weite
 > `os.ongapo.com` und unterliegen den dortigen Nutzungsbedingungen. Du brauchst ein
 > bestehendes Online-Soccer-Konto, um dich anzumelden.
 
----
+Alternativdomains: https://www.online-soccer.eu & https://www.os-zeitungen.com
 
 ## ⬇️ Download
 
