@@ -1,0 +1,41 @@
+MIT License
+
+Copyright (c) 2026 Online Soccer (Android) contributors
+
+Die Android-App „Online Soccer" (Paket com.onlinesoccer.app) sowie die Dokumentation
+in diesem Repository stehen unter der MIT-Lizenz.
+
+Der Quellcode-Build wird nicht über dieses Repository verteilt. Diese Lizenz gilt für
+das veröffentlichte APK sowie für alle Dateien in diesem Repository.
+
+---
+
+Die App ist ein inoffizieller Client und steht in keiner Verbindung zu den Betreibern
+von os.ongapo.com. Alle Spielinhalte, Spielernamen, Vereinsnamen, Ligadaten, Logos und
+sonstige Inhalte von Online Soccer unterliegen den Rechten der jeweiligen Rechteinhaber
+bzw. dem Spielbetreiber und sind nicht von der MIT-Lizenz erfasst. Es wird keine
+Verbindung zum Betreiber des Spiels behauptet.
+
+Berechtigung ist hiermit kostenlos erteilt, ohne dass weitere Bedingungen erfüllt werden
+müssen. Die Software wird "wie vorliegend" ohne jede ausdrückliche oder implizierte
+Gewährleistung bereitgestellt, einschließlich, aber nicht beschränkt auf die implizierten
+Gewährleistungen der Marktfähigkeit, der Eignung für einen bestimmten Zweck und der
+Nichtverletzung von Rechten. Die Autoren oder Copyright-Inhaber haften in keinem Fall für
+Schäden, die aus der Nutzung oder einer anderen Handhabung der Software entstehen.
+
+---
+
+TEILE DER APP
+
+Diese App greift auf Laufzeit-Bibliotheken Dritter zu, unter anderem:
+
+  - AndroidX / Jetpack Compose / Android Keystore / AndroidX Security Crypto
+    (Apache License 2.0)
+  - Kotlin, kotlinx.coroutines (Apache License 2.0)
+  - OkHttp (Apache License 2.0)
+  - jsoup (MIT License)
+  - Dagger / Hilt (Apache License 2.0)
+
+Die jeweiligen Lizenztexte findest du im Quellcode-Build der App sowie unter
+https://spdx.org/licenses/. Vollständige Lizenzhinweise der App werden mit dem
+Quellcode-Build veröffentlicht.

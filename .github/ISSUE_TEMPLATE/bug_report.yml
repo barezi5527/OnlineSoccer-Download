@@ -1,0 +1,83 @@
+name: Bug melden
+description: Melde einen Fehler in der Online-Soccer-App
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für den Hinweis! Bitte fülle möglichst vollständig aus –
+        ohne Versions- und Geräteangaben lässt sich ein Fehler oft nicht nachstellen.
+
+        **Sicherheitslücken bitte nicht hier melden**, sondern gemäß
+        [SECURITY.md](../SECURITY.md#meldung-einer-sicherheitslücke).
+
+  - type: input
+    id: version
+    attributes:
+      label: App-Version
+      description: In der App unter „Einstellungen" bzw. im About-Dialog zu finden.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: android
+    attributes:
+      label: Android-Version
+      placeholder: "Android 14 (API 34)"
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Gerät
+      description: Hersteller und Modell, z. B. "Pixel 8" oder "Samsung SM-S918B"
+    validations:
+      required: true
+
+  - type: textarea
+    id: where
+    attributes:
+      label: Wo tritt der Fehler auf?
+      description: Welcher Bereich, welcher Bildschirm, welcher Tab?
+      placeholder: "Statistiken → Topscorer"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: Was ist passiert?
+      description: Was hast du erwartet, was ist stattdessen eingetreten?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zum Nachstellen
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logcat
+    attributes:
+      label: Fehlermeldung / Logcat
+      description: Falls vorhanden. Bitte Zugangsdaten und Session-Token vorher entfernen!
+      render: text
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Vor dem Absenden
+      options:
+        - label: Ich habe geprüft, ob das Problem auch mit der aktuellsten Version aus den Releases auftritt.
+          required: true
+        - label: Ich habe keine Zugangsdaten, Session-Tokens oder personenbezogenen Fremddaten angehängt.
+          required: true

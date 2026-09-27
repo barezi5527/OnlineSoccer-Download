@@ -1,0 +1,52 @@
+name: Feature-Wunsch
+description: Schlage eine neue Funktion oder eine Verbesserung vor
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideen sind willkommen! Beschreibe möglichst konkret, welchen Nutzen die Funktion bringt.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Welches Problem wird gelöst?
+      description: Was funktioniert heute nicht oder ist umständlich?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Vorgeschlagene Lösung
+      description: Wie würdest du es umsetzen oder bedienen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativen betrachtet?
+      description: Gibt es im Spiel im Browser eine Entsprechung, an der du dich orientiert hast?
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Betroffener Bereich
+      multiple: true
+      options:
+        - Dashboard
+        - Spieltag / ZAT
+        - Taktik
+        - Spielbericht / Elfbewertung
+        - Statistiken
+        - Transfers
+        - Team / Spielerkarte
+        - Bewerbe / Ligen
+        - Private Nachrichten
+        - Stadion
+        - Oberfläche / Design
+        - Sonstiges
+    validations:
+      required: true

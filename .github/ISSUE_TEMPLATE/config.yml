@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Sicherheitslücke melden
+    url: https://github.com/barezi5527/OnlineSoccer-Download/security/advisories/new
+    about: Bitte Sicherheitslücken NICHT als öffentliches Issue melden – hier diskret Hinweise einreichen.
+  - name: Änderungsprotokoll
+    url: https://github.com/barezi5527/OnlineSoccer-Download/blob/main/CHANGELOG.md
+    about: Alle bisherigen Versionen und Änderungen im Überblick.
+  - name: Sicherheit & Berechtigungen
+    url: https://github.com/barezi5527/OnlineSoccer-Download/blob/main/SECURITY.md
+    about: Details zu Berechtigungen, Signatur, Audit und bekannten Einschränkungen.

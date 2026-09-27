@@ -1,0 +1,27 @@
+# Release-Artefakte werden bewusst NICHT eingecheckt.
+# Die APK liegt als GitHub-Release-Asset, nicht im Repository.
+# Große Binärdateien würden die Historie aufblähen und erschweren den Vergleich.
+
+*.apk
+*.aab
+*.aar
+*.ap_
+*.dex
+*.keystore
+*.jks
+*.pem
+*.zip
+
+# Prüfsummen werden je Release veröffentlicht, nicht versioniert.
+checksums.txt
+*.sha256
+
+# Betriebssystem / Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+*.iml
+.vscode/
+*.swp
+*~
