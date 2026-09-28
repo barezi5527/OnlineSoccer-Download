@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "repository": "barezi5527/OnlineSoccer-Download",
-  "changedAt": "2026-09-27T23:50:21Z",
+  "changedAt": "2026-09-28T05:32:39Z",
   "source": "GitHub REST API – Downloadzähler der Release-Assets",
-  "totalDownloads": 19,
+  "totalDownloads": 22,
   "releases": [
     {
       "tag": "v1.0.0",
@@ -15,7 +15,7 @@
       "apk": {
         "name": "OnlineSoccer-1.0.0-release.apk",
         "size": 15878401,
-        "downloads": 14,
+        "downloads": 16,
         "sha256": "f243b676c94b282e6a500326e119f428b5b4a33acc1e962f4623036a5cceea68",
         "downloadUrl": "https://github.com/barezi5527/OnlineSoccer-Download/releases/download/v1.0.0/OnlineSoccer-1.0.0-release.apk"
       },
@@ -23,10 +23,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 5
+          "downloads": 6
         }
       ],
-      "downloads": 19
+      "downloads": 22
     }
   ]
 }
