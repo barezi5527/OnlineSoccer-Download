@@ -10,26 +10,41 @@ die Versionierung folgt [Semantic Versioning](https://semver.org/lang/de/).
 
 ## [Unveröffentlicht]
 
+Noch nichts. Die nächste Version wird hier vorbereitet.
+
+---
+
+## [1.1.0] – 2026-10-02
+
+### Hinzugefügt
+
+- **Teamwechsel:** Über einen 1|2-Umschalter in der Kopfleiste lässt sich zwischen
+  Haupt- und Zweitteam wechseln. Die Team-IDs werden automatisch aus `showteam.php`
+  ermittelt, der Zustand wird je Team sauber zurückgesetzt, und ein Schreibschutz
+  verhindert das Speichern bei offenen, unsynchronisierten Änderungen.
+
 ### Geändert
 
-- **Lizenzwechsel MIT → GPL-3.0.** App und Dokumentation stehen ab sofort unter
-  der GNU General Public License Version 3. Die bis 27.09.2026 gültige
-  MIT-Einordnung ist aufgehoben.
-- Der Quellcode der App ist unter
+- **Lizenzwechsel MIT → GPL-3.0.** Diese Version ist die erste, die aus dem
+  öffentlichen GPL-Quellcode gebaut wurde. App und Dokumentation stehen unter der
+  GNU General Public License Version 3; die bis 27.09.2026 gültige MIT-Einordnung
+  ist aufgehoben.
+- Der Quellcode ist unter
   [barezi5527/OnlineSoccer](https://github.com/barezi5527/OnlineSoccer)
-  öffentlich einsehbar und unter GPL-3.0 mitwirkbar.
-- Die Startseite hat einen neuen Abschnitt „Quellcode & Mitwirken" mit
-  Verweis auf das Quellcode-Repository und die Contributing-Anleitung.
+  öffentlich einsehbar und mitwirkbar.
+- Die Download-Seite hat einen Abschnitt „Quellcode & Mitwirken" erhalten.
+
+### Behoben
+
+- Doppelter Titel auf der Teaminformations-Seite entfernt, ViewModel-Titel gekürzt
+- Redundanter Teaminformationen-Button aus der Kopfleiste entfernt
 
 ### Geändert (Dokumentation)
 
-- `AGENTS.md`: Die frühere Vorgabe, den Quellcode geheim zu halten, ist
-  aufgehoben. Ton-Vorgabe auf Du-Ansprache vereinheitlicht.
-
-Hinweis: Das veröffentlichte Release-Artefakt ist von dieser Änderung nicht
-betroffen – die APK wurde nicht neu gebaut, ihre SHA-256-Prüfsumme in diesem
-Repository gilt unverändert weiter. Die Umstellung der Lizenz wirkt sich auf
-künftige Builds aus.
+- `AGENTS.md`: Die frühere Vorgabe, den Quellcode geheim zu halten, ist aufgehoben;
+  Ton-Vorgabe auf Du-Ansprache vereinheitlicht.
+- Der in README und SECURITY.md dokumentierte Signatur-Fingerprint war fehlerhaft
+  transkribiert und wurde korrigiert. Die Signatur selbst ist unverändert zu 1.0.0.
 
 ---
 
@@ -131,5 +146,6 @@ Android-Client bereit.
 Die jeweils veröffentlichten Dateien stehen unter:
 [**github.com/barezi5527/OnlineSoccer-Download/releases**](https://github.com/barezi5527/OnlineSoccer-Download/releases)
 
-[Unveröffentlicht]: https://github.com/barezi5527/OnlineSoccer-Download/compare/v1.0.0...HEAD
+[Unveröffentlicht]: https://github.com/barezi5527/OnlineSoccer-Download/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.1.0
 [1.0.0]: https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.0.0

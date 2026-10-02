@@ -17,7 +17,7 @@ body:
     attributes:
       label: App-Version
       description: In der App unter „Einstellungen" bzw. im About-Dialog zu finden.
-      placeholder: "1.0.0"
+      placeholder: "1.1.0"
     validations:
       required: true
 

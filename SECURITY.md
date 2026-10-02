@@ -33,7 +33,8 @@ Sicherheitsfixes werden ausschließlich für die aktuelle stabile Version bereit
 
 | Version | Unterstützt | Bemerkung |
 |---|---|---|
-| 1.0.0 | ✅ | aktuelle stabile Version |
+| 1.1.0 | ✅ | aktuelle stabile Version |
+| 1.0.0 | ❌ | veraltet – bitte aktualisieren |
 
 ---
 
@@ -64,7 +65,7 @@ Du kannst die Liste jederzeit selbst prüfen:
 - **Ohne Datei:** Einstellungen → Apps → Online Soccer → Berechtigungen
 - **Mit Datei:**
   ```bash
-  aapt dump permissions OnlineSoccer-1.0.0-release.apk
+  aapt dump permissions OnlineSoccer-1.1.0-release.apk
   ```
 
 ---
@@ -108,17 +109,17 @@ Debug-Signatur). Damit kannst du jederzeit prüfen, ob die Datei echt und unver�
 | **Algorithmus** | RSA, Schlüssellänge 2048 Bit |
 | **Signaturschema** | APK Signature Scheme v2 |
 | **Gültig ab** | 25.09.2026 |
-| **SHA-256-Fingerprint** | `C9:67:D5:43:C9:68:E2:83:C9:9D:98:29:DD:9B:43:3A:B4:A3:3A:C1:1E:96:2F:F4:62:30:36:32:60:DD:69` |
+| **SHA-256-Fingerprint** | `C9:67:D5:43:C9:68:E2:83:C9:D9:D9:82:9D:D9:B4:33:AB:A1:BC:46:B3:10:52:9A:D3:29:2F:FC:58:C0:DD:69` |
 
 **Prüfschritte**
 
 ```bash
 # 1. Datei-Hash
-sha256sum OnlineSoccer-1.0.0-release.apk
-# 1.0.0: f243b676c94b282e6a500326e119f428b5b4a33acc1e962f4623036a5cceea68
+sha256sum OnlineSoccer-1.1.0-release.apk
+# 1.1.0: 769c8ef91bbc54cf4b68759ddde00dafb2c55e1c6a58404dbc1af4012a8b2f8f
 
 # 2. Signatur und Zertifikat
-apksigner verify --print-certs --verbose OnlineSoccer-1.0.0-release.apk
+apksigner verify --print-certs --verbose OnlineSoccer-1.1.0-release.apk
 ```
 
 Beide Werte für jede Version stehen in den [Release-Notizen](https://github.com/barezi5527/OnlineSoccer-Download/releases).
@@ -194,6 +195,12 @@ Spielserver geliefert werden, sowie Probleme des Spiel-Servers selbst.
 ## Sicherheitsrelevante Änderungen
 
 Vollständige Liste aller Versionen: [CHANGELOG.md](CHANGELOG.md).
+
+### 1.1.0 – 2026-10-02
+
+**Keine sicherheitsrelevanten Änderungen.** Der Quellcode ist ab dieser Version
+öffentlich (GPL-3.0); der Funktionsumfang und der Berechtigungssatz bleiben
+unverändert. Signatur und Erstinstaller-Fingerprint sind identisch zu 1.0.0.
 
 ### 1.0.0 – 2026-09-27
 

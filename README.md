@@ -4,13 +4,13 @@
 
 **Die Android-App für das Online-Fußballspiel – [_os.ongapo.com_](https://os.ongapo.com)**
 
-[![Release](https://img.shields.io/badge/Release-v1.0.0-2ea44f)](https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.0.0)
+[![Release](https://img.shields.io/badge/Release-v1.1.0-2ea44f)](https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.1.0)
 [![Android](https://img.shields.io/badge/Android-8.0%2B-3DDC84)](https://developer.android.com/about/versions/oreo)
 [![Lizenz](https://img.shields.io/badge/Lizenz-GPL--3.0-blue)](LICENSE)
 [![Signiert](https://img.shields.io/badge/Signatur-valid%20%2B%20Release--3DDC84)](#signatur--und-integrit%C3%A4tspr%C3%BCfung)
 [![Sicherheit](https://img.shields.io/badge/Berechtigungen-2-orange)](#berechtigungen-der-app)
 
-[⬇️ APK herunterladen (v1.0.0)](https://github.com/barezi5527/OnlineSoccer-Download/releases/latest/download/OnlineSoccer-1.0.0-release.apk)
+[⬇️ APK herunterladen (v1.1.0)](https://github.com/barezi5527/OnlineSoccer-Download/releases/latest/download/OnlineSoccer-1.1.0-release.apk)
 &nbsp;&nbsp;·&nbsp;&nbsp;
 [📊 Downloadzähler](https://barezi5527.github.io/OnlineSoccer-Download/)
 &nbsp;&nbsp;·&nbsp;&nbsp;
@@ -45,10 +45,10 @@ Alternativdomains: https://www.online-soccer.eu & https://www.os-zeitungen.com
 
 | | |
 |---|---|
-| **Version** | 1.0.0 (versionCode 1) |
-| **Datei** | [`OnlineSoccer-1.0.0-release.apk`](https://github.com/barezi5527/OnlineSoccer-Download/releases/latest/download/OnlineSoccer-1.0.0-release.apk) |
+| **Version** | 1.1.0 (versionCode 2) |
+| **Datei** | [`OnlineSoccer-1.1.0-release.apk`](https://github.com/barezi5527/OnlineSoccer-Download/releases/latest/download/OnlineSoccer-1.1.0-release.apk) |
 | **Größe** | 15,9 MB |
-| **SHA-256** | `f243b676c94b282e6a500326e119f428b5b4a33acc1e962f4623036a5cceea68` |
+| **SHA-256** | `769c8ef91bbc54cf4b68759ddde00dafb2c55e1c6a58404dbc1af4012a8b2f8f` |
 | **Mindestversion** | Android 8.0 (Oreo, API 26) |
 | **Zielversion** | Android 15 (API 35) |
 | **Paketname** | `com.onlinesoccer.app` |
@@ -145,14 +145,14 @@ Damit du sicher sein kannst, dass die APK unverändert und vom Projekt stammt:
 **1. SHA-256 der Datei vergleichen**
 
 ```bash
-sha256sum OnlineSoccer-1.0.0-release.apk
-# erwartet: f243b676c94b282e6a500326e119f428b5b4a33acc1e962f4623036a5cceea68
+sha256sum OnlineSoccer-1.1.0-release.apk
+# erwartet: 769c8ef91bbc54cf4b68759ddde00dafb2c55e1c6a58404dbc1af4012a8b2f8f
 ```
 
 **2. Signaturzertifikat prüfen**
 
 ```bash
-apksigner verify --print-certs OnlineSoccer-1.0.0-release.apk
+apksigner verify --print-certs OnlineSoccer-1.1.0-release.apk
 ```
 
 | Feld | Wert |
@@ -160,7 +160,7 @@ apksigner verify --print-certs OnlineSoccer-1.0.0-release.apk
 | Inhaber | `CN=Online Soccer, OU=App, O=Online Soccer, C=DE` |
 | Algorithmus | RSA 2048 |
 | Gültig ab | 25.09.2026 |
-| SHA-256-Fingerprint | `C9:67:D5:43:C9:68:E2:83:C9:9D:98:29:DD:9B:43:3A:B4:A3:3A:C1:1E:96:2F:F4:62:30:36:32:60:DD:69` |
+| SHA-256-Fingerprint | `C9:67:D5:43:C9:68:E2:83:C9:D9:D9:82:9D:D9:B4:33:AB:A1:BC:46:B3:10:52:9A:D3:29:2F:FC:58:C0:DD:69` |
 
 **3. Prüfen, ob der Erstinstaller-Zertifikats-Fingerprint in der App-Info-Ansicht
 „App installieren" steht** – dieser bleibt über alle Updates hinweg gleich.
@@ -177,7 +177,7 @@ zu einer Korrektur:
 - **Sicherheitslücke** → **nicht** als Issue, sondern wie in
   [SECURITY.md](SECURITY.md#meldung-einer-sicherheitslücke) beschrieben melden.
 
-Bitte gib bei Bugreports immer an: App-Version (`1.0.0`), Android-Version, Gerätemodell und
+Bitte gib bei Bugreports immer an: App-Version (`1.1.0`), Android-Version, Gerätemodell und
 was genau passiert bzw. was du erwartet hast.
 
 ---
@@ -198,7 +198,7 @@ was genau passiert bzw. was du erwartet hast.
 
 - **Du willst die App benutzen?** Nimm die APK hier oben. Das ist der
   empfohlene Weg – vorkompiliert, signiert, mit Prüfsumme.
-- **Du willst mitentwickeln?** Nimm den Quellcode. Du braust JDK 17 und das
+- **Du willst mitentwickeln?** Nimm den Quellcode. Du brauchst JDK 17 und das
   Android SDK API 35, dann genügt `./gradlew :app:assembleDebug`.
 
 ### Selbst bauen
@@ -254,7 +254,7 @@ nicht in einer geschlossenen Kopie weiterverkauft werden kann.
 
 <div align="center">
 
-**Online Soccer 1.0.0 (inoffiziell)** – entwickelt für die Community.
+**Online Soccer 1.1.0 (inoffiziell)** – entwickelt für die Community.
 <sub>Der Quellcode steht unter GPL-3.0 offen zur Verfügung:
 <a href="https://github.com/barezi5527/OnlineSoccer">barezi5527/OnlineSoccer</a>.
 Dieses Repository enthält die Release-Artefakte, die veröffentlichte App-Version
