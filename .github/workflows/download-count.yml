@@ -26,6 +26,11 @@ jobs:
     steps:
       - name: Auschecken
         uses: actions/checkout@v4
+        with:
+          # Immer main auschecken: Beim `release`-Event wäre der Checkout sonst
+          # der neue Tag (detached HEAD), und der Push auf den Tag liefe auf
+          # "already exists" – die Zahlen landen aber auf main.
+          ref: main
 
       - name: Downloadzahlen ermitteln
         env:
@@ -43,5 +48,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/downloads.json
           git commit -m "Downloadzahlen aktualisieren"
-          git pull --rebase origin "$GITHUB_REF_NAME"
-          git push origin "HEAD:$GITHUB_REF_NAME"
+          git pull --rebase origin main
+          git push origin HEAD:main
