@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Online Soccer – inoffizielle App: Downloads</title>
-<meta name="description" content="Downloadzähler für die inoffizielle Online-Soccer-Android-App: wie oft wurde welche APK-Version heruntergeladen?">
+<meta name="description" content="Downloadzähler für die inoffizielle Online-Soccer-Android-App: APK-Downloads je Version und Quellcode (GPL-3.0) zum Mitwirken.">
 <meta name="robots" content="index, follow">
 <style>
   :root {
@@ -70,6 +70,15 @@
     text-decoration: none;
   }
   .btn:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .btn.subtle {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+  }
+  .btn-row { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+  .btn-row .btn { margin-top: 1rem; }
+  ul.tight { margin: .5rem 0; padding-left: 1.2rem; }
+  ul.tight li { margin: .25rem 0; }
   table { width: 100%; border-collapse: collapse; margin: .5rem 0 0; }
   th, td { text-align: left; padding: .55rem .5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
   th { font-size: .8rem; text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
@@ -122,6 +131,35 @@
     </tbody>
   </table>
 
+  <h2>Quellcode &amp; Mitwirken</h2>
+  <div class="card">
+    <p>Der Quellcode der App ist seit dem 02.10.2026 öffentlich und steht unter der
+      <a href="https://github.com/barezi5527/OnlineSoccer/blob/main/LICENSE">GPL-3.0</a>.
+      Dieses Repository hier bleibt Download-Bereich; der Code liegt in einem eigenen
+      Repository.</p>
+
+    <p><a class="btn subtle" href="https://github.com/barezi5527/OnlineSoccer">Quellcode ansehen</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/barezi5527/OnlineSoccer/blob/main/CONTRIBUTING.md">Mitwirken</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/barezi5527/OnlineSoccer#mitwirken">Selbst bauen</a></p>
+
+    <p>Wähle den Weg, der zu dir passt:</p>
+    <ul class="tight">
+      <li><strong>Du willst die App benutzen?</strong> Nimm die APK. Sie ist signiert
+        und mit SHA-256-Prüfsumme dokumentiert.</li>
+      <li><strong>Du willst mitentwickeln?</strong> Du brauchst JDK 17 und das Android
+        SDK API 35, dann genügt <code>./gradlew :app:assembleDebug</code>.</li>
+      <li><strong>Du hast einen Fehler gefunden?</strong> Melde ihn als Issue – aber
+        keine Sicherheitslücken, siehe <a href="https://github.com/barezi5527/OnlineSoccer/blob/main/SECURITY.md">SECURITY.md</a>.</li>
+    </ul>
+
+    <p class="note">GPL-3.0 heißt: du darfst den Code lesen, ändern, bauen und
+      weitergeben. Gibst du eine veränderte Fassung an Dritte weiter, musst du auch
+      diese unter GPL-3.0 veröffentlichen. Der Quellcode ist Kotlin mit Jetpack
+      Compose; im Repository liegen 147 Kotlin-Dateien und 34 Testklassen.</p>
+  </div>
+
   <h2>Wie wird gezählt?</h2>
   <p>Die Zahlen stammen aus den Downloadzählern, die GitHub selbst für die
     Release-Dateien führt. Ein Workflow prüft diese Werte stündlich und schreibt
@@ -145,6 +183,8 @@
     <p>Online Soccer (inoffiziell) – kostenlos, ohne Werbung, ohne In-App-Käufe.
       Min. Android 8.0, Paketname <code>com.onlinesoccer.app</code>.</p>
     <p>
+      <a href="https://github.com/barezi5527/OnlineSoccer">Quellcode (GPL-3.0)</a> ·
+      <a href="https://github.com/barezi5527/OnlineSoccer/blob/main/CONTRIBUTING.md">Mitwirken</a> ·
       <a href="https://github.com/barezi5527/OnlineSoccer-Download/releases">Alle Releases</a> ·
       <a href="https://github.com/barezi5527/OnlineSoccer-Download/blob/main/CHANGELOG.md">Änderungsprotokoll</a> ·
       <a href="https://github.com/barezi5527/OnlineSoccer-Download/blob/main/SECURITY.md">Sicherheit &amp; Berechtigungen</a> ·

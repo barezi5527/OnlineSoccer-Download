@@ -15,8 +15,14 @@ Hier gehört hinein:
 - Datenschutzangaben (`PRIVACY.md`)
 - Support-Dokumentation
 
-Hier gehört **nicht** hinein: der Quellcode-Build. Er bleibt privat. Wer ihn
-veröffentlicht, verletzt die Absicht des Projekts.
+Hier gehört **nicht** hinein: der Quellcode-Build. Er liegt im eigenen Repository
+`barezi5527/OnlineSoccer` und wird dort gepflegt. Dieses Repository bleibt
+ausschließlich Download-Bereich: keine Quelltextdateien, keine Build-Skripte,
+keine Gradle-Konfiguration.
+
+Der Quellcode ist seit dem 02.10.2026 **öffentlich** (GPL-3.0). Frühere Fassungen
+dieses Dokuments verlangten, dass er privat bleibt – das ist bewusst entschieden
+worden und hiermit aufgehoben.
 
 ## Inoffiziell-Kennzeichnung
 
@@ -48,7 +54,7 @@ Weisung wird `app/src/main/res/values/strings.xml` angepasst.
 
 ## Release-Ablauf
 
-1. Im privaten Quellcode-Repo: `./gradlew clean assembleRelease`
+1. Im Quellcode-Repo `barezi5527/OnlineSoccer`: `./gradlew clean assembleRelease`
 2. Signatur prüfen und Werte auslesen:
    ```bash
    ~/Android/Sdk/build-tools/<version>/apksigner verify --print-certs <apk>
@@ -72,7 +78,8 @@ PATCH für Fehlerbehebungen. `versionCode` steigt bei jedem Release monoton.
 
 ## Ton der Dokumentation
 
-- Deutsch, Siezen Sie. Sachlich und nüchtern, keine Werbesprache.
+- Deutsch, Du-Ansprache. Sachlich und nüchtern, keine Werbesprache. Der vorhandene
+  Text folgt bereits der Du-Ansprache; neue Abschnitte ebenso.
 - Sicherheitsrelevante Aussagen müssen überprüfbar sein. Keine Behauptung ohne Beleg.
 - Bekannte Einschränkungen offen benennen, nicht verschweigen. Wer die App aus einer
   privaten APK-Installation bekommt, soll wissen, worauf er sich einlässt.

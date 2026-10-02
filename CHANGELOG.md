@@ -10,7 +10,26 @@ die Versionierung folgt [Semantic Versioning](https://semver.org/lang/de/).
 
 ## [Unveröffentlicht]
 
-Noch nichts. Nächste Version wird hier vorbereitet.
+### Geändert
+
+- **Lizenzwechsel MIT → GPL-3.0.** App und Dokumentation stehen ab sofort unter
+  der GNU General Public License Version 3. Die bis 27.09.2026 gültige
+  MIT-Einordnung ist aufgehoben.
+- Der Quellcode der App ist unter
+  [barezi5527/OnlineSoccer](https://github.com/barezi5527/OnlineSoccer)
+  öffentlich einsehbar und unter GPL-3.0 mitwirkbar.
+- Die Startseite hat einen neuen Abschnitt „Quellcode & Mitwirken" mit
+  Verweis auf das Quellcode-Repository und die Contributing-Anleitung.
+
+### Geändert (Dokumentation)
+
+- `AGENTS.md`: Die frühere Vorgabe, den Quellcode geheim zu halten, ist
+  aufgehoben. Ton-Vorgabe auf Du-Ansprache vereinheitlicht.
+
+Hinweis: Das veröffentlichte Release-Artefakt ist von dieser Änderung nicht
+betroffen – die APK wurde nicht neu gebaut, ihre SHA-256-Prüfsumme in diesem
+Repository gilt unverändert weiter. Die Umstellung der Lizenz wirkt sich auf
+künftige Builds aus.
 
 ---
 

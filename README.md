@@ -6,7 +6,7 @@
 
 [![Release](https://img.shields.io/badge/Release-v1.0.0-2ea44f)](https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.0.0)
 [![Android](https://img.shields.io/badge/Android-8.0%2B-3DDC84)](https://developer.android.com/about/versions/oreo)
-[![Lizenz](https://img.shields.io/badge/Lizenz-MIT-blue)](LICENSE)
+[![Lizenz](https://img.shields.io/badge/Lizenz-GPL--3.0-blue)](LICENSE)
 [![Signiert](https://img.shields.io/badge/Signatur-valid%20%2B%20Release--3DDC84)](#signatur--und-integrit%C3%A4tspr%C3%BCfung)
 [![Sicherheit](https://img.shields.io/badge/Berechtigungen-2-orange)](#berechtigungen-der-app)
 
@@ -71,8 +71,10 @@ Alle Versionen mit vollständigem Änderungsprotokoll findest du unter
 - Ein Upgrade der App funktioniert ohne Datenverlust – `versionCode` steigt monoton.
 - Ein Downgrade ist mit Android blockiert. Bei Problemen: App deinstallieren, APK neu
   installieren, mit dem eigenen Konto erneut anmelden.
-- Die App ist **nicht** im Google Play Store. Das ist Absicht: der Quellcode-Build ist bewusst
-  nicht über Dritte verteilt und lässt sich so jederzeit unabhängig prüfen.
+- Die App ist **nicht** im Google Play Store. Das ist Absicht: Die APK hier ist
+  signiert und mit einer SHA-256-Prüfsumme versehen, und der Quellcode ist unter
+  [GPL-3.0](https://github.com/barezi5527/OnlineSoccer/blob/main/LICENSE) offen.
+  Damit kannst du prüfen, was auf deinem Gerät landet, und die App selbst bauen.
 
 ### 📊 Downloadzähler
 
@@ -180,6 +182,65 @@ was genau passiert bzw. was du erwartet hast.
 
 ---
 
+## 🧑‍💻 Quellcode & Mitwirken
+
+**Der Quellcode der App ist seit dem 02.10.2026 öffentlich** – unter der
+[GPL-3.0-Lizenz](https://github.com/barezi5527/OnlineSoccer/blob/main/LICENSE).
+
+| | |
+|---|---|
+| **Repository** | [barezi5527/OnlineSoccer](https://github.com/barezi5527/OnlineSoccer) |
+| **Lizenz** | GPL-3.0 |
+| **Sprache / Stack** | Kotlin, Jetpack Compose, Hilt, OkHttp, Jsoup |
+| **Mindestversion** | Android 8.0 (API 26), Build gegen API 35 |
+
+### Wann welcher Weg?
+
+- **Du willst die App benutzen?** Nimm die APK hier oben. Das ist der
+  empfohlene Weg – vorkompiliert, signiert, mit Prüfsumme.
+- **Du willst mitentwickeln?** Nimm den Quellcode. Du braust JDK 17 und das
+  Android SDK API 35, dann genügt `./gradlew :app:assembleDebug`.
+
+### Selbst bauen
+
+```bash
+git clone https://github.com/barezi5527/OnlineSoccer.git
+cd OnlineSoccer
+export ANDROID_HOME=$HOME/Android/Sdk
+./gradlew :app:testDebugUnitTest   # 34 Testklassen
+./gradlew :app:assembleDebug
+```
+
+Eine Schritt-für-Schritt-Anleitung steht in der
+[README des Quellcode-Repos](https://github.com/barezi5527/OnlineSoccer#mitwirken).
+
+### Was beitragen?
+
+Beiträge sind ausdrücklich willkommen. Der Einstieg lohnt sich besonders in
+diesen Bereichen:
+
+| Bereich | Warum |
+|---|---|
+| **Barrierefreiheit** | TalkBack, Bedienbarkeit mit großer Schrift |
+| **Übersetzungen** | Texte liegen derzeit fest auf Deutsch vor |
+| **Parser-Robustheit** | os.ongapo.com ändert sein Layout gelegentlich |
+| **Tests** | 34 Testklassen bei 147 Kotlin-Dateien – Luft nach oben |
+| **Dokumentation** | Teils veraltete Analyse-Dokumente im Repo |
+
+Bitte lies vor dem ersten Pull Request die
+[CONTRIBUTING.md](https://github.com/barezi5527/OnlineSoccer/blob/main/CONTRIBUTING.md).
+Sicherheitslücken bitte **nicht** als Issue melden, sondern wie in
+[SECURITY.md](SECURITY.md#meldung-einer-sicherheitslücke) beschrieben.
+
+### Was GPL-3.0 für dich bedeutet
+
+Du darfst den Code lesen, ändern, bauen und weitergeben. Wenn du eine veränderte
+Fassung an Dritte weitergibst, musst du **auch diese** unter GPL-3.0
+veröffentlichen. Das ist der einzige Vorbehalt – und der Grund, warum die App
+nicht in einer geschlossenen Kopie weiterverkauft werden kann.
+
+---
+
 ## 📄 Weitere Dokumente
 
 | Datei | Inhalt |
@@ -194,7 +255,9 @@ was genau passiert bzw. was du erwartet hast.
 <div align="center">
 
 **Online Soccer 1.0.0 (inoffiziell)** – entwickelt für die Community.
-<sub>Der Quellcode-Build ist privat. Dieses Repository enthält ausschließlich
-Release-Artefakte, die veröffentlichte App-Version und deren Dokumentation.</sub>
+<sub>Der Quellcode steht unter GPL-3.0 offen zur Verfügung:
+<a href="https://github.com/barezi5527/OnlineSoccer">barezi5527/OnlineSoccer</a>.
+Dieses Repository enthält die Release-Artefakte, die veröffentlichte App-Version
+und deren Dokumentation.</sub>
 
 </div>
