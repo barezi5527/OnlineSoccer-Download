@@ -14,6 +14,26 @@ Noch nichts. Die nächste Version wird hier vorbereitet.
 
 ---
 
+## [1.2.0] – 2026-10-06
+
+### Hinzugefügt
+
+- **Kader:** Verletzungen werden direkt bei den Spielern angezeigt.
+- **Trainer:** Trainer lassen sich einstellen und feuern.
+- **Jugendteam:** Vier überarbeitete Bereiche für Teamübersicht, Einzelwerte, Opt. Skill und Optionen.
+- **A-Team-Berufung:** Position, Spielername und Vertragslaufzeit samt Kosten werden aktuell vom Server geladen und vor der Beförderung bestätigt.
+- **Jugendhinweis:** Die Nachricht über einen bald ausscheidenden Jugendspieler erscheint als schließbare Dashboard-Kachel statt als Popup.
+
+### Geändert
+
+- **Internationale Bewerbe:** Der Bereich wurde vollständig überarbeitet.
+
+### Behoben
+
+- Jugendspieler-Berufung sendet nun auch das serverseitige Folgeformular mit gewählter Position, Name und Vertrag.
+
+---
+
 ## [1.1.0] – 2026-10-02
 
 ### Hinzugefügt
@@ -146,6 +166,7 @@ Android-Client bereit.
 Die jeweils veröffentlichten Dateien stehen unter:
 [**github.com/barezi5527/OnlineSoccer-Download/releases**](https://github.com/barezi5527/OnlineSoccer-Download/releases)
 
-[Unveröffentlicht]: https://github.com/barezi5527/OnlineSoccer-Download/compare/v1.1.0...HEAD
+[Unveröffentlicht]: https://github.com/barezi5527/OnlineSoccer-Download/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.2.0
 [1.1.0]: https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.1.0
 [1.0.0]: https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.0.0
