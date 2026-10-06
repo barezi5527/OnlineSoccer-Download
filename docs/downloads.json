@@ -1,10 +1,33 @@
 {
   "schema": 1,
   "repository": "barezi5527/OnlineSoccer-Download",
-  "changedAt": "2026-10-05T22:43:54Z",
+  "changedAt": "2026-10-06T00:06:47Z",
   "source": "GitHub REST API – Downloadzähler der Release-Assets",
-  "totalDownloads": 96,
+  "totalDownloads": 98,
   "releases": [
+    {
+      "tag": "v1.2.0",
+      "version": "1.2.0",
+      "title": "Online Soccer (inoffiziell) 1.2.0 – Kader, Trainer, Jugendteam und Bewerbe",
+      "prerelease": false,
+      "publishedAt": "2026-10-06T00:06:39Z",
+      "pageUrl": "https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.2.0",
+      "apk": {
+        "name": "OnlineSoccer-1.2.0-release.apk",
+        "size": 15960321,
+        "downloads": 0,
+        "sha256": null,
+        "downloadUrl": "https://github.com/barezi5527/OnlineSoccer-Download/releases/download/v1.2.0/OnlineSoccer-1.2.0-release.apk"
+      },
+      "otherAssets": [
+        {
+          "name": "checksums-1.2.0.txt",
+          "size": 97,
+          "downloads": 0
+        }
+      ],
+      "downloads": 0
+    },
     {
       "tag": "v1.1.0",
       "version": "1.1.0",
@@ -23,10 +46,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 16
+          "downloads": 17
         }
       ],
-      "downloads": 30
+      "downloads": 31
     },
     {
       "tag": "v1.0.0",
@@ -46,10 +69,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 42
+          "downloads": 43
         }
       ],
-      "downloads": 66
+      "downloads": 67
     }
   ]
 }
