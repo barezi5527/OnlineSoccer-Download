@@ -14,6 +14,24 @@ Noch nichts. Die nächste Version wird hier vorbereitet.
 
 ---
 
+## [1.2.1] – 2026-10-08
+
+### Hinzugefügt
+
+- **Club-Ranking:** Lokale Vereinssuche mit Trefferzählung; Rangposition und Rankingwerte bleiben erhalten.
+- **Internationale Qualifikation:** Hin- und Rückspiel werden gemeinsam angezeigt, einschließlich der Vorschau für ein noch ausstehendes Rückspiel.
+
+### Geändert
+
+- **Hauptnavigation:** Die Auswahl eines Hauptbereichs führt jetzt stets zu dessen Startansicht zurück.
+- **OSC/OSE:** Das von der Website hervorgehobene weitergekommene Team wird in der Paarungskarte markiert.
+
+### Behoben
+
+- **Teamwechsel:** Kader- und ZAT-Ansichten zeigen nach dem Wechsel keine zwischengespeicherten Daten des vorherigen Teams mehr.
+
+---
+
 ## [1.2.0] – 2026-10-06
 
 ### Hinzugefügt
@@ -166,7 +184,8 @@ Android-Client bereit.
 Die jeweils veröffentlichten Dateien stehen unter:
 [**github.com/barezi5527/OnlineSoccer-Download/releases**](https://github.com/barezi5527/OnlineSoccer-Download/releases)
 
-[Unveröffentlicht]: https://github.com/barezi5527/OnlineSoccer-Download/compare/v1.2.0...HEAD
+[Unveröffentlicht]: https://github.com/barezi5527/OnlineSoccer-Download/compare/v1.2.1...HEAD
+[1.2.1]: https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.2.1
 [1.2.0]: https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.2.0
 [1.1.0]: https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.1.0
 [1.0.0]: https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.0.0
