@@ -19,7 +19,7 @@ Noch nichts. Die nächste Version wird hier vorbereitet.
 ### Hinzugefügt
 
 - **Club-Ranking:** Lokale Vereinssuche mit Trefferzählung; Rangposition und Rankingwerte bleiben erhalten.
-- **Internationale Qualifikation:** Hin- und Rückspiel werden gemeinsam angezeigt, einschließlich der Vorschau für ein noch ausstehendes Rückspiel.
+- **Internationale Qualifikation:** Hin- und Rückspiel werden gemeinsam angezeigt, einschließlich der Vorschau für ein noch ausstehendes Rückspiel. Der Siegerhinweis erscheint nur bei aktivierter Ergebnisanzeige.
 
 ### Geändert
 

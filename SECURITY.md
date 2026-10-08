@@ -118,7 +118,7 @@ Debug-Signatur). Damit kannst du jederzeit pr√ºfen, ob die Datei echt und unver√
 ```bash
 # 1. Datei-Hash
 sha256sum OnlineSoccer-1.2.1-release.apk
-# 1.2.1: e763a22d4118f89373e6c8bb9c32f48f049b7fa0badcd2a2b4c071c7555c8627
+# 1.2.1: fe26db8f0d2a8093500c336fd739488d1d40a554e015941569af8a363fa5d157
 
 # 2. Signatur und Zertifikat
 apksigner verify --print-certs --verbose OnlineSoccer-1.2.1-release.apk

@@ -48,7 +48,7 @@ Alternativdomains: https://www.online-soccer.eu & https://www.os-zeitungen.com
 | **Version** | 1.2.1 (versionCode 4) |
 | **Datei** | [`OnlineSoccer-1.2.1-release.apk`](https://github.com/barezi5527/OnlineSoccer-Download/releases/latest/download/OnlineSoccer-1.2.1-release.apk) |
 | **Größe** | 16,0 MB |
-| **SHA-256** | `e763a22d4118f89373e6c8bb9c32f48f049b7fa0badcd2a2b4c071c7555c8627` |
+| **SHA-256** | `fe26db8f0d2a8093500c336fd739488d1d40a554e015941569af8a363fa5d157` |
 | **Mindestversion** | Android 8.0 (Oreo, API 26) |
 | **Zielversion** | Android 15 (API 35) |
 | **Paketname** | `com.onlinesoccer.app` |
@@ -113,7 +113,7 @@ Auf der Seite werden keine Besucherdaten, IP-Adressen oder Cookies erhoben.
 | **Transfers** | Transfermarkt, Versteigerungsmarkt, „Auf den VM setzen", eigene Gebote, Leihe, Transferstatus, letzte Aktionen |
 | **Team** | Teaminformationen (auch fremde Vereine), Spielerkarte, Verletzungen im Kader, Trainer einstellen und feuern, Freundschaften |
 | **Jugendteam** | Vier überarbeitete Bereiche, dynamische Positions-/Namens-/Vertragsauswahl bei A-Team-Berufungen |
-| **Bewerbe** | Spieltag-Auswahl mit Saisonfilter, Landespokal, OSC-/OSE-Qualifikationen mit Hin- und Rückspielanzeige, Club-Ranking mit Vereinssuche |
+| **Bewerbe** | Spieltag-Auswahl mit Saisonfilter, Landespokal, OSC-/OSE-Qualifikationen mit Hin- und Rückspielanzeige, Siegerhinweis auf Wunsch, Club-Ranking mit Vereinssuche |
 | **Server-Bereiche** | Freie Teams, Zweitteams, Managerliste, Manager-Suche |
 | **Private Nachrichten** | Posteingang, Gesendet, Trainer-PN direkt aus Verein- und Spielerkarte, Ungelesen-Badge |
 | **Stadion & Ausstattung** | Stadionausbau mit Kapazitätsanzeige, Tribünenverteilung, Rasenmuster, Premium-Ausstattung, Saisonwechsel |
@@ -147,7 +147,7 @@ Damit du sicher sein kannst, dass die APK unverändert und vom Projekt stammt:
 
 ```bash
 sha256sum OnlineSoccer-1.2.1-release.apk
-# erwartet: e763a22d4118f89373e6c8bb9c32f48f049b7fa0badcd2a2b4c071c7555c8627
+# erwartet: fe26db8f0d2a8093500c336fd739488d1d40a554e015941569af8a363fa5d157
 ```
 
 **2. Signaturzertifikat prüfen**
