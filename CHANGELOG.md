@@ -14,6 +14,49 @@ Noch nichts. Die nächste Version wird hier vorbereitet.
 
 ---
 
+## [1.2.2] – 2026-10-25
+
+### Hinzugefügt
+
+- **Vereinswappen:** Ein zentraler Wappen-Loader mit Zwischenspeicher versorgt jetzt
+  Ligatabelle, Vereinsseite, Landespokal und internationale Wettbewerbe. Fehlt ein
+  Wappen, erscheinen die Initialen des Vereins.
+- **Teamdetails:** Vereine lassen sich direkt aus dem Spieltag und dem Landespokal
+  öffnen (Issues #17, #18, #19).
+- **Spielbericht:** Das letzte Spiel auf der Spiele-Seite führt jetzt direkt zum
+  Spielbericht.
+- **Training:** Überarbeitetes Trainingsformular und Trainingskarten mit
+  Positionsbadge statt Farbbalken.
+
+### Geändert
+
+- **Filter und Tabellen:** Filter-Dropdowns sind auf 200 dp begrenzt; der aktuelle
+  Eintrag wird beim Öffnen automatisch sichtbar gemacht (Issue #20). Ligatabelle
+  und Filterleiste sind kompakter.
+- **ZAT und Spielbericht:** Das Spielfeld reicht wie auf der Website bis zur
+  T-Zone (Issues #13, #16). Der ZAT-Kopfbereich ist kompakter und näher an den
+  Untertabs.
+- **OSC/OSE-Qualifikation:** Das Rückspiel-Ergebnis wird in Paarungsreihenfolge
+  angezeigt (Issue #12).
+- **Bewerbe:** Die Zurück-Geste funktioniert in den Unteransichten zuverlässig.
+
+### Behoben
+
+- **Trainingseinstellungen:** Die Chip-Leiste zeigt wieder das T-Präfix, und das
+  Formular sendet stets alle Spielerzeilen (Issue #14).
+- **Fremder Spielbericht:** Der Saisonplan eines fremden Teams öffnet jetzt den
+  gewählten Bericht über die statische Bericht-URL statt über eine falsche
+  Bericht-ID (Issue #15).
+- **Spielbericht-Schaltfläche:** Die Schaltfläche ist mittig ausgerichtet.
+
+### Entfernt
+
+- **Lokale Stadionnamen:** Die eigene Anzeigename-Eingabe für Spielberichte wurde
+  aus urheberrechtlichen und Wartungsgründen entfernt. Spielberichte zeigen wieder
+  ausschließlich den Servernamen.
+
+---
+
 ## [1.2.1] – 2026-10-08
 
 ### Hinzugefügt

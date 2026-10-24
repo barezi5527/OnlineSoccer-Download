@@ -33,7 +33,8 @@ Sicherheitsfixes werden ausschließlich für die aktuelle stabile Version bereit
 
 | Version | Unterstützt | Bemerkung |
 |---|---|---|
-| 1.2.1 | ✅ | aktuelle stabile Version |
+| 1.2.2 | ✅ | aktuelle stabile Version |
+| 1.2.1 | ❌ | veraltet – bitte aktualisieren |
 | 1.2.0 | ❌ | veraltet – bitte aktualisieren |
 | 1.1.0 | ❌ | veraltet – bitte aktualisieren |
 | 1.0.0 | ❌ | veraltet – bitte aktualisieren |
@@ -67,7 +68,7 @@ Du kannst die Liste jederzeit selbst prüfen:
 - **Ohne Datei:** Einstellungen → Apps → Online Soccer → Berechtigungen
 - **Mit Datei:**
   ```bash
-  aapt dump permissions OnlineSoccer-1.2.1-release.apk
+  aapt dump permissions OnlineSoccer-1.2.2-release.apk
   ```
 
 ---
@@ -117,11 +118,11 @@ Debug-Signatur). Damit kannst du jederzeit prüfen, ob die Datei echt und unver�
 
 ```bash
 # 1. Datei-Hash
-sha256sum OnlineSoccer-1.2.1-release.apk
-# 1.2.1: fe26db8f0d2a8093500c336fd739488d1d40a554e015941569af8a363fa5d157
+sha256sum OnlineSoccer-1.2.2-release.apk
+# 1.2.2: d86e7a7d780a26949066a36a9a3d598e9c638e5c45bc28ce9eb0f00ee7b37ef6
 
 # 2. Signatur und Zertifikat
-apksigner verify --print-certs --verbose OnlineSoccer-1.2.1-release.apk
+apksigner verify --print-certs --verbose OnlineSoccer-1.2.2-release.apk
 ```
 
 Beide Werte für jede Version stehen in den [Release-Notizen](https://github.com/barezi5527/OnlineSoccer-Download/releases).
@@ -197,6 +198,13 @@ Spielserver geliefert werden, sowie Probleme des Spiel-Servers selbst.
 ## Sicherheitsrelevante Änderungen
 
 Vollständige Liste aller Versionen: [CHANGELOG.md](CHANGELOG.md).
+
+### 1.2.2 – 2026-10-25
+
+- Keine neuen Android-Berechtigungen; die Berechtigungsliste bleibt unverändert.
+- Die lokale Anzeigename-Eingabe für Spielberichte wurde entfernt; Spielberichte
+  verwenden wieder ausschließlich den Servernamen.
+- Das Release-Zertifikat und der Erstinstaller-Fingerprint bleiben gegenüber 1.2.1 unverändert.
 
 ### 1.2.1 – 2026-10-08
 
