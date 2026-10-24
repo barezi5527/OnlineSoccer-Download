@@ -1,10 +1,33 @@
 {
   "schema": 1,
   "repository": "barezi5527/OnlineSoccer-Download",
-  "changedAt": "2026-10-24T19:32:26Z",
+  "changedAt": "2026-10-24T22:26:26Z",
   "source": "GitHub REST API – Downloadzähler der Release-Assets",
-  "totalDownloads": 489,
+  "totalDownloads": 493,
   "releases": [
+    {
+      "tag": "v1.2.2",
+      "version": "1.2.2",
+      "title": "Online Soccer (inoffiziell) 1.2.2 – Wappen, Bewerbe und Training",
+      "prerelease": false,
+      "publishedAt": "2026-10-24T22:26:18Z",
+      "pageUrl": "https://github.com/barezi5527/OnlineSoccer-Download/releases/tag/v1.2.2",
+      "apk": {
+        "name": "OnlineSoccer-1.2.2-release.apk",
+        "size": 15993089,
+        "downloads": 0,
+        "sha256": "d86e7a7d780a26949066a36a9a3d598e9c638e5c45bc28ce9eb0f00ee7b37ef6",
+        "downloadUrl": "https://github.com/barezi5527/OnlineSoccer-Download/releases/download/v1.2.2/OnlineSoccer-1.2.2-release.apk"
+      },
+      "otherAssets": [
+        {
+          "name": "checksums.txt",
+          "size": 97,
+          "downloads": 0
+        }
+      ],
+      "downloads": 0
+    },
     {
       "tag": "v1.2.1",
       "version": "1.2.1",
@@ -23,10 +46,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 80
+          "downloads": 81
         }
       ],
-      "downloads": 104
+      "downloads": 105
     },
     {
       "tag": "v1.2.0",
@@ -46,10 +69,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 93
+          "downloads": 94
         }
       ],
-      "downloads": 101
+      "downloads": 102
     },
     {
       "tag": "v1.1.0",
@@ -69,10 +92,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 110
+          "downloads": 111
         }
       ],
-      "downloads": 124
+      "downloads": 125
     },
     {
       "tag": "v1.0.0",
@@ -92,10 +115,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 136
+          "downloads": 137
         }
       ],
-      "downloads": 160
+      "downloads": 161
     }
   ]
 }
