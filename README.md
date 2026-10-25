@@ -16,6 +16,8 @@
 &nbsp;&nbsp;·&nbsp;&nbsp;
 [📋 Änderungsprotokoll](CHANGELOG.md)
 &nbsp;&nbsp;·&nbsp;&nbsp;
+[📸 Screenshots](Screenshot)
+&nbsp;&nbsp;·&nbsp;&nbsp;
 [🛡️ Sicherheit & Berechtigungen](SECURITY.md)
 &nbsp;&nbsp;·&nbsp;&nbsp;
 [🔒 Datenschutz](PRIVACY.md)
