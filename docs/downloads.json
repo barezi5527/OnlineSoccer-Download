@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "repository": "barezi5527/OnlineSoccer-Download",
-  "changedAt": "2026-10-25T06:17:34Z",
+  "changedAt": "2026-10-25T12:37:00Z",
   "source": "GitHub REST API – Downloadzähler der Release-Assets",
-  "totalDownloads": 511,
+  "totalDownloads": 518,
   "releases": [
     {
       "tag": "v1.2.2",
@@ -15,7 +15,7 @@
       "apk": {
         "name": "OnlineSoccer-1.2.2-release.apk",
         "size": 15993089,
-        "downloads": 2,
+        "downloads": 4,
         "sha256": "d86e7a7d780a26949066a36a9a3d598e9c638e5c45bc28ce9eb0f00ee7b37ef6",
         "downloadUrl": "https://github.com/barezi5527/OnlineSoccer-Download/releases/download/v1.2.2/OnlineSoccer-1.2.2-release.apk"
       },
@@ -23,10 +23,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 4
+          "downloads": 5
         }
       ],
-      "downloads": 6
+      "downloads": 9
     },
     {
       "tag": "v1.2.1",
@@ -46,10 +46,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 84
+          "downloads": 85
         }
       ],
-      "downloads": 108
+      "downloads": 109
     },
     {
       "tag": "v1.2.0",
@@ -69,10 +69,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 97
+          "downloads": 98
         }
       ],
-      "downloads": 105
+      "downloads": 106
     },
     {
       "tag": "v1.1.0",
@@ -92,10 +92,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 114
+          "downloads": 115
         }
       ],
-      "downloads": 128
+      "downloads": 129
     },
     {
       "tag": "v1.0.0",
@@ -115,10 +115,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 140
+          "downloads": 141
         }
       ],
-      "downloads": 164
+      "downloads": 165
     }
   ]
 }
