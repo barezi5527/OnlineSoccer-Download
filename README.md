@@ -10,17 +10,12 @@
 [![Signiert](https://img.shields.io/badge/Signatur-valid%20%2B%20Release--3DDC84)](#signatur--und-integrit%C3%A4tspr%C3%BCfung)
 [![Sicherheit](https://img.shields.io/badge/Berechtigungen-2-orange)](#berechtigungen-der-app)
 
-[⬇️ APK herunterladen (v1.2.2)](https://github.com/barezi5527/OnlineSoccer-Download/releases/latest/download/OnlineSoccer-1.2.2-release.apk)
-&nbsp;&nbsp;·&nbsp;&nbsp;
-[📊 Downloadzähler](https://barezi5527.github.io/OnlineSoccer-Download/)
-&nbsp;&nbsp;·&nbsp;&nbsp;
-[📋 Änderungsprotokoll](CHANGELOG.md)
-&nbsp;&nbsp;·&nbsp;&nbsp;
-[📸 Screenshots](Screenshot)
-&nbsp;&nbsp;·&nbsp;&nbsp;
-[🛡️ Sicherheit & Berechtigungen](SECURITY.md)
-&nbsp;&nbsp;·&nbsp;&nbsp;
-[🔒 Datenschutz](PRIVACY.md)
+[⬇️&nbsp;APK&nbsp;herunterladen&nbsp;(v1.2.2)](https://github.com/barezi5527/OnlineSoccer-Download/releases/latest/download/OnlineSoccer-1.2.2-release.apk)&nbsp;&nbsp;·&nbsp;
+[📊&nbsp;Downloadzähler](https://barezi5527.github.io/OnlineSoccer-Download/)&nbsp;&nbsp;·&nbsp;
+[📋&nbsp;Änderungsprotokoll](CHANGELOG.md)&nbsp;&nbsp;·&nbsp;
+[📸&nbsp;Screenshots](Screenshot)&nbsp;&nbsp;·&nbsp;
+[🛡️&nbsp;Sicherheit&nbsp;&amp;&nbsp;Berechtigungen](SECURITY.md)&nbsp;&nbsp;·&nbsp;
+[🔒&nbsp;Datenschutz](PRIVACY.md)
 
 </div>
 
