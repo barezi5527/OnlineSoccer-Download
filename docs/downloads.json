@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "repository": "barezi5527/OnlineSoccer-Download",
-  "changedAt": "2026-10-25T01:15:53Z",
+  "changedAt": "2026-10-25T06:17:34Z",
   "source": "GitHub REST API – Downloadzähler der Release-Assets",
-  "totalDownloads": 506,
+  "totalDownloads": 511,
   "releases": [
     {
       "tag": "v1.2.2",
@@ -23,10 +23,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 3
+          "downloads": 4
         }
       ],
-      "downloads": 5
+      "downloads": 6
     },
     {
       "tag": "v1.2.1",
@@ -46,10 +46,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 83
+          "downloads": 84
         }
       ],
-      "downloads": 107
+      "downloads": 108
     },
     {
       "tag": "v1.2.0",
@@ -69,10 +69,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 96
+          "downloads": 97
         }
       ],
-      "downloads": 104
+      "downloads": 105
     },
     {
       "tag": "v1.1.0",
@@ -92,10 +92,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 113
+          "downloads": 114
         }
       ],
-      "downloads": 127
+      "downloads": 128
     },
     {
       "tag": "v1.0.0",
@@ -115,10 +115,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 139
+          "downloads": 140
         }
       ],
-      "downloads": 163
+      "downloads": 164
     }
   ]
 }
