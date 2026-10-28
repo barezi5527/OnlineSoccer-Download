@@ -123,11 +123,10 @@
         <th scope="col">Veröffentlicht</th>
         <th scope="col">Größe</th>
         <th scope="col" class="num">APK-Downloads</th>
-        <th scope="col" class="num">Downloads gesamt</th>
       </tr>
     </thead>
     <tbody id="versions-body">
-      <tr><td colspan="5">Wird geladen …</td></tr>
+      <tr><td colspan="4">Wird geladen …</td></tr>
     </tbody>
   </table>
 
@@ -271,20 +270,18 @@
       cell(row, formatDate(release.publishedAt));
       cell(row, release.apk ? formatBytes(release.apk.size) : "–");
       cell(row, release.apk ? numberFormat.format(release.apk.downloads) : "–", "num");
-      cell(row, numberFormat.format(release.downloads), "num");
       body.appendChild(row);
     });
 
-    setStatus("Zahlen zuletzt geändert: " + formatDate(data.changedAt) + " · " +
-      numberFormat.format(data.totalDownloads) + " Downloads gesamt · Quelle: " +
-      data.source, false);
+    setStatus("Zahlen zuletzt geändert: " + formatDate(data.changedAt) +
+      " · Quelle: " + data.source, false);
 
     document.documentElement.dataset.ready = "true";
   }
 
   function fail(error) {
     el("versions-body").innerHTML =
-      '<tr><td colspan="5">Zähler derzeit nicht verfügbar.</td></tr>';
+      '<tr><td colspan="4">Zähler derzeit nicht verfügbar.</td></tr>';
     text(el("headline-note"), "Zähler derzeit nicht verfügbar");
     setStatus("Die Downloadzahlen konnten nicht geladen werden (" + error.message +
       "). Die aktuellen Zahlen zeigt GitHub direkt auf der Release-Seite.", true);
