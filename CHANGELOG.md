@@ -14,6 +14,24 @@ Noch nichts. Die nächste Version wird hier vorbereitet.
 
 ---
 
+## [1.2.3] – 2026-11-08
+
+### Hinzugefügt
+
+- **Login-Seite:** Ein kurzer Infotext erklärt das Spiel; die aktuell öffentlich
+  sichtbare Zahl der aktiven Manager wird angezeigt.
+
+### Geändert
+
+- **Liga-Filter:** Die Auswahl von Liga, Land, Tabelle und Saison bleibt auch dann
+  verfügbar, wenn noch keine Ligatabelle angezeigt wird.
+
+### Behoben
+
+- Parser- und Stabilitätskorrekturen für die Darstellung der Liga-Filter.
+
+---
+
 ## [1.2.2] – 2026-10-25
 
 ### Hinzugefügt
