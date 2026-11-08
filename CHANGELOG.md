@@ -30,6 +30,9 @@ Noch nichts. Die nächste Version wird hier vorbereitet.
 
 - Parser- und Stabilitätskorrekturen für die Darstellung der Liga-Filter.
 
+### Behoben 
+- Die unbegründete 700-Zeichen-Grenze pro Spielminute im Spielbericht wurde entfernt.
+ 
 ---
 
 ## [1.2.2] – 2026-10-25
