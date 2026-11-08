@@ -25,8 +25,6 @@ Noch nichts. Die nächste Version wird hier vorbereitet.
 
 - Spielerkarten Details überarbeitet
 
-### Geändert
-
 - **Liga-Filter:** Die Auswahl von Liga, Land, Tabelle und Saison bleibt auch dann
   verfügbar, wenn noch keine Ligatabelle angezeigt wird.
 
@@ -34,7 +32,6 @@ Noch nichts. Die nächste Version wird hier vorbereitet.
 
 - Parser- und Stabilitätskorrekturen für die Darstellung der Liga-Filter.
 
-### Behoben 
 - Die unbegründete 700-Zeichen-Grenze pro Spielminute im Spielbericht wurde entfernt.
  
 ---
