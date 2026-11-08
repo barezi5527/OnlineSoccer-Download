@@ -18,6 +18,8 @@ Noch nichts. Die nächste Version wird hier vorbereitet.
 
 ### Hinzugefügt
 
+- Update Benachrichtigung über Briefumschlag, Download und Installation bewußt manuell belassen. 
+
 - **Login-Seite:** Ein kurzer Infotext erklärt das Spiel; die aktuell öffentlich
   sichtbare Zahl der aktiven Manager wird angezeigt.
 
