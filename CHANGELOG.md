@@ -23,6 +23,10 @@ Noch nichts. Die nächste Version wird hier vorbereitet.
 
 ### Geändert
 
+- Spielerkarten Details überarbeitet
+
+### Geändert
+
 - **Liga-Filter:** Die Auswahl von Liga, Land, Tabelle und Saison bleibt auch dann
   verfügbar, wenn noch keine Ligatabelle angezeigt wird.
 
