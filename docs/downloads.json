@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "repository": "barezi5527/OnlineSoccer-Download",
-  "changedAt": "2026-11-09T00:58:37Z",
+  "changedAt": "2026-11-09T08:06:19Z",
   "source": "GitHub REST API – Downloadzähler der Release-Assets",
-  "totalDownloads": 839,
+  "totalDownloads": 846,
   "releases": [
     {
       "tag": "v1.2.3",
@@ -15,7 +15,7 @@
       "apk": {
         "name": "OnlineSoccer-1.2.3-release.apk",
         "size": 16025857,
-        "downloads": 3,
+        "downloads": 4,
         "sha256": "ee086c459757615ce715db111d197496b5ba977af9f67b86a9297799fdce4c10",
         "downloadUrl": "https://github.com/barezi5527/OnlineSoccer-Download/releases/download/v1.2.3/OnlineSoccer-1.2.3-release.apk"
       },
@@ -23,10 +23,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 1
+          "downloads": 2
         }
       ],
-      "downloads": 4
+      "downloads": 6
     },
     {
       "tag": "v1.2.2",
@@ -46,10 +46,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 66
+          "downloads": 67
         }
       ],
-      "downloads": 81
+      "downloads": 82
     },
     {
       "tag": "v1.2.1",
@@ -69,10 +69,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 145
+          "downloads": 146
         }
       ],
-      "downloads": 170
+      "downloads": 171
     },
     {
       "tag": "v1.2.0",
@@ -92,10 +92,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 159
+          "downloads": 160
         }
       ],
-      "downloads": 168
+      "downloads": 169
     },
     {
       "tag": "v1.1.0",
@@ -115,10 +115,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 175
+          "downloads": 176
         }
       ],
-      "downloads": 190
+      "downloads": 191
     },
     {
       "tag": "v1.0.0",
@@ -138,10 +138,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 201
+          "downloads": 202
         }
       ],
-      "downloads": 226
+      "downloads": 227
     }
   ]
 }
