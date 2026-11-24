@@ -14,6 +14,26 @@ Noch nichts. Die nächste Version wird hier vorbereitet.
 
 ---
 
+## [1.2.4] – 2026-11-24
+
+### Hinzugefügt
+
+- **Verträge:** Sortierung nach Laufzeit, Name und Position in beiden Vertragsansichten.
+- **Verträge verlängern:** Kleiner Positionspunkt vor dem Spielernamen in den Kaderfarben
+  (TOR gelb, ABW grün, DMI blau, MIT hellblau, OMI pink, STU rot).
+
+### Geändert
+
+- **Nationale Bewerbe:** Tab-Reihenfolge `Spieltage | Ligatabelle | Landespokal`;
+  „Spieltage" ist der Start-Tab.
+- **Freundschaftsspiele:** Filter-Dropdown auf 300 dp begrenzt.
+
+### Behoben
+
+- **Demo-Sitzung:** wird nicht mehr als persönliche Anmeldung angezeigt.
+
+---
+
 ## [1.2.3] – 2026-11-08
 
 ### Hinzugefügt

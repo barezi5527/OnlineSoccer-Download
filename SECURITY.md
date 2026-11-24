@@ -33,7 +33,8 @@ Sicherheitsfixes werden ausschließlich für die aktuelle stabile Version bereit
 
 | Version | Unterstützt | Bemerkung |
 |---|---|---|
-| 1.2.3 | ✅ | aktuelle stabile Version |
+| 1.2.4 | ✅ | aktuelle stabile Version |
+| 1.2.3 | ❌ | veraltet – bitte aktualisieren |
 | 1.2.2 | ❌ | veraltet – bitte aktualisieren |
 | 1.2.1 | ❌ | veraltet – bitte aktualisieren |
 | 1.2.0 | ❌ | veraltet – bitte aktualisieren |
@@ -69,7 +70,7 @@ Du kannst die Liste jederzeit selbst prüfen:
 - **Ohne Datei:** Einstellungen → Apps → Online Soccer → Berechtigungen
 - **Mit Datei:**
   ```bash
-  aapt dump permissions OnlineSoccer-1.2.3-release.apk
+  aapt dump permissions OnlineSoccer-1.2.4-release.apk
   ```
 
 ---
@@ -119,11 +120,11 @@ Debug-Signatur). Damit kannst du jederzeit prüfen, ob die Datei echt und unver�
 
 ```bash
 # 1. Datei-Hash
-sha256sum OnlineSoccer-1.2.3-release.apk
-# 1.2.3: 21d21bf91273440e868997dfd9e540e3488d0bfe185f5d4afd5e45cf39cdd1f1
+sha256sum OnlineSoccer-1.2.4-release.apk
+# 1.2.4: 998248510c4396e21158daee94b1145ed3cfd86e8523380da043d0d6be640676
 
 # 2. Signatur und Zertifikat
-apksigner verify --print-certs --verbose OnlineSoccer-1.2.3-release.apk
+apksigner verify --print-certs --verbose OnlineSoccer-1.2.4-release.apk
 ```
 
 Beide Werte für jede Version stehen in den [Release-Notizen](https://github.com/barezi5527/OnlineSoccer-Download/releases).
@@ -200,17 +201,22 @@ Spielserver geliefert werden, sowie Probleme des Spiel-Servers selbst.
 
 Vollständige Liste aller Versionen: [CHANGELOG.md](CHANGELOG.md).
 
+### 1.2.4 – 2026-11-24
+
+- Keine neuen Android-Berechtigungen; die Berechtigungsliste bleibt unverändert.
+- Das Release-Zertifikat und der Erstinstaller-Fingerprint bleiben gegenüber 1.2.3 unverändert.
+
+### 1.2.3 – 2026-11-08
+
+- Keine neuen Android-Berechtigungen; die Berechtigungsliste bleibt unverändert.
+- Das Release-Zertifikat und der Erstinstaller-Fingerprint bleiben gegenüber 1.2.2 unverändert.
+
 ### 1.2.2 – 2026-10-25
 
 - Keine neuen Android-Berechtigungen; die Berechtigungsliste bleibt unverändert.
 - Die lokale Anzeigename-Eingabe für Spielberichte wurde entfernt; Spielberichte
   verwenden wieder ausschließlich den Servernamen.
 - Das Release-Zertifikat und der Erstinstaller-Fingerprint bleiben gegenüber 1.2.1 unverändert.
-
-### 1.2.3 – 2026-11-08
-
-- Keine neuen Android-Berechtigungen; die Berechtigungsliste bleibt unverändert.
-- Das Release-Zertifikat und der Erstinstaller-Fingerprint bleiben gegenüber 1.2.2 unverändert.
 
 ### 1.2.1 – 2026-10-08
 
