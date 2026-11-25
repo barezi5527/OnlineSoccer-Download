@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "repository": "barezi5527/OnlineSoccer-Download",
-  "changedAt": "2026-11-25T08:47:34Z",
+  "changedAt": "2026-11-25T19:24:15Z",
   "source": "GitHub REST API – Downloadzähler der Release-Assets",
-  "totalDownloads": 1165,
+  "totalDownloads": 1172,
   "releases": [
     {
       "tag": "v1.2.4",
@@ -23,10 +23,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 3
+          "downloads": 4
         }
       ],
-      "downloads": 4
+      "downloads": 5
     },
     {
       "tag": "v1.2.3",
@@ -46,10 +46,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 55
+          "downloads": 56
         }
       ],
-      "downloads": 61
+      "downloads": 62
     },
     {
       "tag": "v1.2.2",
@@ -69,10 +69,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 119
+          "downloads": 120
         }
       ],
-      "downloads": 134
+      "downloads": 135
     },
     {
       "tag": "v1.2.1",
@@ -92,10 +92,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 198
+          "downloads": 199
         }
       ],
-      "downloads": 223
+      "downloads": 224
     },
     {
       "tag": "v1.2.0",
@@ -115,10 +115,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 212
+          "downloads": 213
         }
       ],
-      "downloads": 221
+      "downloads": 222
     },
     {
       "tag": "v1.1.0",
@@ -138,10 +138,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 228
+          "downloads": 229
         }
       ],
-      "downloads": 243
+      "downloads": 244
     },
     {
       "tag": "v1.0.0",
@@ -161,10 +161,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 254
+          "downloads": 255
         }
       ],
-      "downloads": 279
+      "downloads": 280
     }
   ]
 }
