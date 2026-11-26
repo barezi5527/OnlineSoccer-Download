@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "repository": "barezi5527/OnlineSoccer-Download",
-  "changedAt": "2026-11-26T02:53:44Z",
+  "changedAt": "2026-11-26T12:49:05Z",
   "source": "GitHub REST API – Downloadzähler der Release-Assets",
-  "totalDownloads": 1179,
+  "totalDownloads": 1190,
   "releases": [
     {
       "tag": "v1.2.4",
@@ -15,7 +15,7 @@
       "apk": {
         "name": "OnlineSoccer-1.2.4-release.apk",
         "size": 16025857,
-        "downloads": 1,
+        "downloads": 3,
         "sha256": "c0e21d42be11e2cb7101995f93dedcc269a7bf51d9a66a35d3f33391f159f989",
         "downloadUrl": "https://github.com/barezi5527/OnlineSoccer-Download/releases/download/v1.2.4/OnlineSoccer-1.2.4-release.apk"
       },
@@ -23,10 +23,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 5
+          "downloads": 6
         }
       ],
-      "downloads": 6
+      "downloads": 9
     },
     {
       "tag": "v1.2.3",
@@ -38,7 +38,7 @@
       "apk": {
         "name": "OnlineSoccer-1.2.3-release.apk",
         "size": 16025857,
-        "downloads": 6,
+        "downloads": 7,
         "sha256": "ee086c459757615ce715db111d197496b5ba977af9f67b86a9297799fdce4c10",
         "downloadUrl": "https://github.com/barezi5527/OnlineSoccer-Download/releases/download/v1.2.3/OnlineSoccer-1.2.3-release.apk"
       },
@@ -46,10 +46,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 57
+          "downloads": 58
         }
       ],
-      "downloads": 63
+      "downloads": 65
     },
     {
       "tag": "v1.2.2",
@@ -61,7 +61,7 @@
       "apk": {
         "name": "OnlineSoccer-1.2.2-release.apk",
         "size": 15993089,
-        "downloads": 15,
+        "downloads": 16,
         "sha256": "d86e7a7d780a26949066a36a9a3d598e9c638e5c45bc28ce9eb0f00ee7b37ef6",
         "downloadUrl": "https://github.com/barezi5527/OnlineSoccer-Download/releases/download/v1.2.2/OnlineSoccer-1.2.2-release.apk"
       },
@@ -69,10 +69,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 121
+          "downloads": 122
         }
       ],
-      "downloads": 136
+      "downloads": 138
     },
     {
       "tag": "v1.2.1",
@@ -92,10 +92,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 200
+          "downloads": 201
         }
       ],
-      "downloads": 225
+      "downloads": 226
     },
     {
       "tag": "v1.2.0",
@@ -115,10 +115,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 214
+          "downloads": 215
         }
       ],
-      "downloads": 223
+      "downloads": 224
     },
     {
       "tag": "v1.1.0",
@@ -138,10 +138,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 230
+          "downloads": 231
         }
       ],
-      "downloads": 245
+      "downloads": 246
     },
     {
       "tag": "v1.0.0",
@@ -161,10 +161,10 @@
         {
           "name": "checksums.txt",
           "size": 97,
-          "downloads": 256
+          "downloads": 257
         }
       ],
-      "downloads": 281
+      "downloads": 282
     }
   ]
 }
